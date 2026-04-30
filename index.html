@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagadic — AI Receptionist & Conversational Websites | Saif Nagada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nagadic-style.css">
+</head>
+<body>
+    <!-- Ambient Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-inner">
+            <div class="logo">
+                NAGADIC
+                <span>by Saif Nagada</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Industries</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <button class="nav-cta">Book a Call</button>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#services">Services</a>
+            <a href="#work">Industries</a>
+            <a href="#process">Process</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+            <button class="nav-cta">Book a Call</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-badge">AI Receptionist & Conversational Websites</div>
+                <h1>
+                    <span class="line-1">I BUILD AI</span>
+                    <span class="line-2">RECEPTIONISTS</span>
+                    <span class="line-3">that convert 24/7</span>
+                </h1>
+                <p class="hero-desc">Your website should close deals — not just display them. I build AI-powered systems that qualify leads, answer questions, and book meetings while you sleep.</p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">24/7</div>
+                        <div class="stat-label">Always Active</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">&lt;3s</div>
+                        <div class="stat-label">First Response</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">10x</div>
+                        <div class="stat-label">Lead Engagement</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-demo">
+                <div class="floating-badge badge-1">Always Online</div>
+                <div class="floating-badge badge-2">Books Meetings</div>
+
+                <div class="demo-container chat-demo-container">
+                    <div class="demo-header">
+                        <div class="demo-dot"></div>
+                        <div class="demo-dot"></div>
+                        <div class="demo-dot"></div>
+                        <div class="chat-status-bar">
+                            <span class="online-dot"></span>
+                            Nagadic AI — Online
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="chatMessages"></div>
+
+                    <div class="chat-quick-replies">
+                        <button class="quick-reply" data-scenario="dental">🦷 Dental Clinic</button>
+                        <button class="quick-reply active" data-scenario="agency">🏢 Agency</button>
+                        <button class="quick-reply" data-scenario="law">⚖️ Law Firm</button>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <input type="text" class="chat-input" id="chatInput" placeholder="Try typing a message...">
+                        <button class="chat-send-btn" id="chatSendBtn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="gallery-section" id="work">
+        <div class="gallery-inner">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">INDUSTRIES <span>WE SERVE</span></h2>
+                    <p class="section-subtitle">AI Receptionists deployed across high-value service businesses that can't afford to miss a lead.</p>
+                </div>
+            </div>
+
+            <div class="bento-gallery industries-grid">
+                <div class="gallery-item industry-card" data-category="dental">
+                    <div class="industry-gradient gradient-dental"></div>
+                    <div class="item-info always-visible">
+                        <div class="industry-icon-wrap">🦷</div>
+                        <p class="item-prompt industry-name">Dental Clinics</p>
+                        <span class="item-style">Appointments + FAQs</span>
+                    </div>
+                </div>
+                <div class="gallery-item industry-card" data-category="agency">
+                    <div class="industry-gradient gradient-agency"></div>
+                    <div class="item-info always-visible">
+                        <div class="industry-icon-wrap">📊</div>
+                        <p class="item-prompt industry-name">Marketing Agencies</p>
+                        <span class="item-style">Client Intake + Qualification</span>
+                    </div>
+                </div>
+                <div class="gallery-item industry-card" data-category="law">
+                    <div class="industry-gradient gradient-law"></div>
+                    <div class="item-info always-visible">
+                        <div class="industry-icon-wrap">⚖️</div>
+                        <p class="item-prompt industry-name">Law Firms</p>
+                        <span class="item-style">Case Inquiries + Consults</span>
+                    </div>
+                </div>
+                <div class="gallery-item industry-card" data-category="medspa">
+                    <div class="industry-gradient gradient-medspa"></div>
+                    <div class="item-info always-visible">
+                        <div class="industry-icon-wrap">✨</div>
+                        <p class="item-prompt industry-name">Med Spas</p>
+                        <span class="item-style">Treatment Bookings</span>
+                    </div>
+                </div>
+                <div class="gallery-item industry-card" data-category="realestate">
+                    <div class="industry-gradient gradient-realestate"></div>
+                    <div class="item-info always-visible">
+                        <div class="industry-icon-wrap">🏠</div>
+                        <p class="item-prompt industry-name">Real Estate</p>
+                        <span class="item-style">Property Inquiries + Viewings</span>
+                    </div>
+                </div>
+                <div class="gallery-item industry-card" data-category="consulting">
+                    <div class="industry-gradient gradient-consulting"></div>
+                    <div class="item-info always-visible">
+                        <div class="industry-icon-wrap">💡</div>
+                        <p class="item-prompt industry-name">Consulting</p>
+                        <span class="item-style">Discovery + Qualification</span>
+                    </div>
+                </div>
+                <div class="gallery-item industry-card" data-category="ecommerce">
+                    <div class="industry-gradient gradient-ecommerce"></div>
+                    <div class="item-info always-visible">
+                        <div class="industry-icon-wrap">🛒</div>
+                        <p class="item-prompt industry-name">E-Commerce</p>
+                        <span class="item-style">Support + Returns</span>
+                    </div>
+                </div>
+                <div class="gallery-item industry-card" data-category="restaurant">
+                    <div class="industry-gradient gradient-restaurant"></div>
+                    <div class="item-info always-visible">
+                        <div class="industry-icon-wrap">🍽️</div>
+                        <p class="item-prompt industry-name">Restaurants</p>
+                        <span class="item-style">Reservations + Orders</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Features Section -->
+    <section class="features-section" id="services">
+        <div class="features-inner">
+            <div class="features-header">
+                <h2 class="section-title">WHAT I <span>BUILD</span></h2>
+                <p class="section-subtitle">Not chatbots. Not templates. Custom AI systems engineered to convert.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card highlight">
+                    <span class="feature-number">01</span>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    </div>
+                    <h3 class="feature-title">CONVERSATIONAL WEBSITES</h3>
+                    <p class="feature-desc">Websites that talk back. Every visitor gets a personalized, intelligent conversation — not a static brochure. Your AI handles objections, qualifies intent, and guides them toward booking.</p>
+                    <div class="feature-stat">
+                        <span class="feature-stat-value">3–5x</span>
+                        <span class="feature-stat-label">higher lead conversion vs. passive sites</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-number">02</span>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3 class="feature-title">24/7 AI RECEPTIONIST</h3>
+                    <p class="feature-desc">Never miss a lead at 2 AM. Your AI receptionist stays online around the clock — answering, qualifying, and routing hot leads the moment they arrive.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-number">03</span>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3 class="feature-title">LEAD QUALIFICATION</h3>
+                    <p class="feature-desc">Every visitor gets scored automatically. Budget, timeline, intent — all captured before you pick up the phone. You only talk to serious buyers.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-number">04</span>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <h3 class="feature-title">CALENDAR INTEGRATION</h3>
+                    <p class="feature-desc">Meetings booked directly into your calendar — no back-and-forth emails, no assistant needed. The AI handles scheduling end-to-end.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-number">05</span>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </div>
+                    <h3 class="feature-title">YOUR BRAND VOICE</h3>
+                    <p class="feature-desc">Trained on your tone, your offers, your FAQs. The AI sounds exactly like you — not a generic bot. Consistent, professional, always on-brand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="how-section" id="process">
+        <div class="how-inner">
+            <div class="features-header">
+                <h2 class="section-title">THE <span>PROCESS</span></h2>
+                <p class="section-subtitle">From zero to deployed in days, not months.</p>
+            </div>
+
+            <div class="how-grid">
+                <div class="how-step">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">DISCOVERY CALL</h3>
+                    <p class="step-desc">We map your client journey, identify friction points, and define exactly what your AI Receptionist should handle — from first contact to booked meeting.</p>
+                </div>
+                <div class="how-step">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">BUILD & TRAIN</h3>
+                    <p class="step-desc">I engineer your AI system — custom conversations, lead flows, integrations, and brand voice. Built specifically for your business, not off the shelf.</p>
+                </div>
+                <div class="how-step">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">LAUNCH & SCALE</h3>
+                    <p class="step-desc">Go live in days. Your AI starts handling leads immediately. Continuous refinement ensures it gets smarter — and your conversion rate keeps climbing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-inner">
+            <div class="features-header">
+                <h2 class="section-title">SIMPLE <span>PRICING</span></h2>
+                <p class="section-subtitle">Transparent packages. No hidden fees. No long contracts.</p>
+            </div>
+
+            <div class="pricing-grid" style="margin-top:3rem;">
+                <div class="price-card">
+                    <h3 class="plan-name">CONVERSATIONAL SITE</h3>
+                    <p class="plan-desc">For service businesses ready to stop losing leads</p>
+                    <div class="plan-price">
+                        <span class="price-value">$1,500</span>
+                        <span class="price-period">one-time</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Custom AI conversation design</li>
+                        <li>Lead capture + qualification</li>
+                        <li>Brand voice training</li>
+                        <li>Mobile-optimized chat widget</li>
+                        <li>Analytics dashboard</li>
+                    </ul>
+                    <button class="plan-btn">Get Started</button>
+                </div>
+
+                <div class="price-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="plan-name">AI RECEPTIONIST</h3>
+                    <p class="plan-desc">Full system for serious client acquisition</p>
+                    <div class="plan-price">
+                        <span class="price-value">$399</span>
+                        <span class="price-period">/ month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Everything in Conversational Site</li>
+                        <li>Calendar integration (Calendly / Cal.com)</li>
+                        <li>CRM sync (HubSpot / Notion)</li>
+                        <li>Lead scoring + routing</li>
+                        <li>Monthly optimization sessions</li>
+                    </ul>
+                    <button class="plan-btn">Book a Call</button>
+                </div>
+
+                <div class="price-card">
+                    <h3 class="plan-name">AGENCY PARTNER</h3>
+                    <p class="plan-desc">White-label deployments for agencies</p>
+                    <div class="plan-price">
+                        <span class="price-value">Custom</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Unlimited client deployments</li>
+                        <li>White-label branding</li>
+                        <li>Revenue share model available</li>
+                        <li>Priority support</li>
+                        <li>Custom integrations</li>
+                    </ul>
+                    <button class="plan-btn">Let's Talk</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="features-header">
+            <h2 class="section-title">QUESTIONS & <span>ANSWERS</span></h2>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">What exactly is a Conversational Website?</button>
+                <div class="faq-answer">
+                    <p>A Conversational Website replaces your passive, static site with an AI-driven experience. Instead of visitors reading and leaving, they have a real conversation with your AI — which qualifies them, answers objections, and moves them toward booking. Think of it as your best salesperson, always online.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How is this different from a regular chatbot?</button>
+                <div class="faq-answer">
+                    <p>Generic chatbots use scripted decision trees that feel robotic and break easily. My AI Receptionists are powered by large language models, trained specifically on your business, and designed to handle nuanced conversations naturally. They understand context, handle objections, and adapt — just like a real person would.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How long does it take to launch?</button>
+                <div class="faq-answer">
+                    <p>Most builds are complete within 7–14 days. After the discovery call, I handle all the technical work. You review, approve, and we go live. No technical skills required from your side.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do I need to change my existing website?</button>
+                <div class="faq-answer">
+                    <p>Not necessarily. The AI chat widget can be embedded into your existing site with a single line of code. Alternatively, I can build you a fully new Conversational Website from the ground up — depending on your goals and current setup.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What businesses benefit most?</button>
+                <div class="faq-answer">
+                    <p>Any service-based business where client acquisition matters: dental clinics, marketing agencies, law firms, med spas, real estate agencies, coaches, and consultants. If you're losing leads because no one responds fast enough — this solves it.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I see a demo before committing?</button>
+                <div class="faq-answer">
+                    <p>Absolutely. Book a discovery call and I'll show you a live demo tailored to your industry. No generic walkthroughs — you'll see exactly how your AI Receptionist would work for your specific business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-box">
+            <div class="cta-content">
+                <div class="cta-eyebrow">Start Converting Today</div>
+                <h2 class="cta-title">
+                    YOUR NEXT CLIENT
+                    <span>is already on your website</span>
+                </h2>
+                <p class="cta-desc">Don't let them leave without a conversation. Your AI Receptionist handles every visitor — 24/7, on autopilot, while you focus on delivering great work.</p>
+                <div class="cta-buttons">
+                    <button class="cta-btn-primary">Book a Discovery Call</button>
+                    <button class="cta-btn-secondary">View Pricing</button>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <div class="capture-card">
+                    <div class="capture-header">
+                        <span class="capture-dot"></span>
+                        Lead Captured — Tonight, 11:47 PM
+                    </div>
+                    <div class="capture-convo">
+                        <div class="capture-msg visitor-msg">"I need a consultation tomorrow if possible"</div>
+                        <div class="capture-arrow">↓</div>
+                        <div class="capture-msg ai-msg">
+                            Meeting booked ✓<br>
+                            <strong>Sarah Chen — Tomorrow, 10:00 AM</strong>
+                            <span class="capture-sub">Confirmation sent to sarah@email.com</span>
+                        </div>
+                    </div>
+                    <div class="cta-demo-meta">
+                        <div class="cta-demo-time">Handled in <span>4.2s</span></div>
+                        <div class="capture-status">While you slept 💤</div>
+                    </div>
+                </div>
+                <div class="cta-users">
+                    <div class="cta-user-avatars">
+                        <div class="cta-user-avatar">D</div>
+                        <div class="cta-user-avatar">A</div>
+                        <div class="cta-user-avatar">M</div>
+                        <div class="cta-user-avatar">+</div>
+                    </div>
+                    <div class="cta-user-count"><span>Service businesses</span> using AI receptionists</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        NAGADIC
+                        <span>by Saif Nagada</span>
+                    </div>
+                    <p class="footer-desc">Building AI systems that turn passive websites into active client conversion machines.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter / X">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-subscribe">
+                    <h4>Stay in the Loop</h4>
+                    <p class="subscribe-desc">Insights on AI, client acquisition, and the future of service businesses.</p>
+                    <div class="subscribe-form">
+                        <input type="email" class="subscribe-input" placeholder="your@email.com">
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Nagadic — Saif Nagada. <a href="https://saifnagada.com" target="_blank">saifnagada.com</a></p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="nagadic-script.js"></script>
+</body>
+</html>
